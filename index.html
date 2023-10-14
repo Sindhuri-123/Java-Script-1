@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h1>Reverse every word in sentence</h1>
+    <script>
+        function reverseWordsInSentence(sentence) {
+    // Split the sentence into words
+    var words = sentence.split(' ');
+    
+    // Reverse each word
+    var reversedWords = words.map(function(word) {
+      return word.split('').reverse().join('');
+    });
+    
+    // Join the reversed words back into a sentence
+    var reversedSentence = reversedWords.join(' ');
+    
+    return reversedSentence;
+  }
+  
+  // Example usage
+  var inputSentence = "This is a sunny day";
+  var reversedSentence = reverseWordsInSentence(inputSentence);
+  console.log(reversedSentence); // Output: "sihT si a ynnus yad"
+    </script>
+</body>
+</html>
